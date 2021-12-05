@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:background="@drawable/gradient">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1585dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:text="@string/main_title"
+            android:textAlignment="center"
+            android:textColor="#CB636363"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="300sp"
+            android:layout_height="350sp"
+            android:src="@drawable/background" />
+
+        <Button
+            android:id="@+id/bt_cliente"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_button_light"
+            android:onClick="goToRegister"
+            android:text="@string/btn_client"
+            android:textAllCaps="false"
+            android:textColor="#44CF6C"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_profissional"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button_light"
+            android:onClick="goToRegister"
+            android:text="@string/btn_professional"
+            android:textAllCaps="false"
+            android:textColor="#44CF6C"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_cadastrado"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button_border_light"
+            android:onClick="tenhoCadastro"
+            android:text="@string/btn_ihave_count"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ui.configuration.ConfigurationFragment"
+    android:orientation="vertical"
+    android:background="#D5DFD4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/config_title_personal"
+                android:textColor="#636363"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:background="#fff"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/custom_config_card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Nome completo"
+                        android:textColor="#343434"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/name_no_edit"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#9F9F9F"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:id="@+id/ic_name_oc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow"
+                        android:onClick="nameOpenClose"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_config_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:visibility="gone"
+                    android:background="#fff"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Nome completo"
+                        android:textColor="#343434"
+                        android:textSize="12sp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        app:placeholderTextColor="#c4c4c4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ed_nome_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:textSize="12sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Data de nascimento"
+                        android:textColor="#343434"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/date_no_edit"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#9F9F9F"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_disabled"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Documento"
+                        android:textColor="#343434"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/document_no_edit"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="CPF 490.987.654 - 60"
+                        android:textColor="#9F9F9F"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_disabled"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Telefone"
+                        android:textColor="#343434"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/cell_no_edit"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="(11) 97658 - 3490"
+                        android:textColor="#9F9F9F"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:id="@+id/ic_cell_oc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow"
+                        android:onClick="celOpenClose"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_config_cell"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:visibility="gone"
+                    android:background="#fff"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Telefone"
+                        android:textColor="#343434"
+                        android:textSize="14sp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        app:placeholderTextColor="#c4c4c4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ed_cell_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"
+                            android:textSize="12sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Segurança"
+                android:textColor="#636363"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="30dp"
+                android:background="#fff"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/custom_config_card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="E-mail"
+                        android:textColor="#343434"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/email_no_edit"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="andrea.matos@gmail.com"
+                        android:textColor="#9F9F9F"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:onClick="emailOpenClose"
+                        android:id="@+id/ic_email_OC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_config_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:visibility="gone"
+                    android:background="#fff"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Email"
+                        android:textColor="#343434"
+                        android:textSize="14sp"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        app:placeholderTextColor="#c4c4c4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ed_email_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:textSize="12sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Senha"
+                        android:textColor="#343434"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:text="********"
+                        android:textColor="#9F9F9F"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_arrow_disabled"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_edit"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button_border_light"
+            android:onClick="finishedEdition"
+            android:text="Salvar"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>

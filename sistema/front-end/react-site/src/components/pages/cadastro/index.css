@@ -1,0 +1,58 @@
+.partition {
+    border-color: #C4C4C4;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__titulo {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #343434;
+}
+
+.formulario__desc {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #4F4F4F;
+}
+
+.formulario__desc b {
+    color: #44CF6C;
+}
+
+.formulario__input {
+    margin: 10px;
+}
+
+.formulario__botoes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.ant-steps {
+    width: 100%;
+    border-bottom: 1px solid #C4C4C4;
+    padding-bottom: 30px;
+}
+
+.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon {
+    background-color: #74DB3D;
+    border: none;
+}
+
+.ant-steps-item-finish .ant-steps-item-icon {
+    border-color: #C4C4C4;
+}
+
+.ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
+    color: #C4C4C4;
+}
+
+.ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title {
+    color: #C4C4C4;
+}

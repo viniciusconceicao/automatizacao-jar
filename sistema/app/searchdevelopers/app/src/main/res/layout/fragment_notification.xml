@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".activities.fragments.PainelFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dados_titular_aviso_pagamento">
+
+            <ImageView
+                android:id="@+id/arrow_notification"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="40dp"
+                android:src="@mipmap/seta" />
+
+            <TextView
+                android:id="@+id/title_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/arrow_notification"
+                android:text="Notificações"
+                android:textColor="#2686CB"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lista_recycle_notificatio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_notification"
+                android:layout_marginBottom="50dp"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_notification" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

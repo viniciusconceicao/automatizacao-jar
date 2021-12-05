@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.ui.category.CategoryFragment"
+    android:background="#EBEBEB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/dados_titular_aviso_pagamento">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="10dp"
+                android:text="string/category_title"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_desenvolvimento"
+            android:layout_width="369dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="5dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_categoria_dev_card" />
+
+                <TextView
+                    android:id="@+id/title_card_desenvolvimento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Desenvolvimento"
+                    android:textColor="@color/blue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginRight="23dp"
+                    android:checked="false"
+                    android:buttonTint="@color/blue"/>
+
+                <TextView
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="100dp"
+                    android:text="Desenvolvo aplicativos para celular, redes sociais, sites, sistemas e games." />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    <!-- xxxxxxxxxxxxxxx CARD 2 INFRA xxxxxxxxxxxxxxxxxxxxx-->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_infra"
+            android:layout_width="369dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="5dp"
+            android:layout_below="@+id/card_desenvolvimento"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_categoria_infra_card" />
+
+                <TextView
+                    android:id="@+id/title_card_infra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Infraestrutura"
+                    android:textColor="@color/blue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginRight="23dp"
+                    android:checked="false"
+                    android:buttonTint="@color/blue"/>
+
+                <TextView
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="100dp"
+                    android:text="Projetar redes de computadores e planejamento de hardware e software;
+    Garantir a manutenção de todos esses serviços;
+    Cuidar da segurança de dados da empresa e evitar invasões nos sistemas;
+    Atuar como suporte técnico, atendendo a chamados e esclarecendo questionamentos." />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    <!--xxxxxxxxxxxxxxxxxx CARD 3 SEGURANÇA DA INFO xxxxxxxxxxxxxxxxxx-->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_security"
+            android:layout_width="369dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="5dp"
+            android:layout_below="@+id/card_infra"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_categoria_securityi_card" />
+
+                <TextView
+                    android:id="@+id/title_card_security"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Segurança da Informação"
+                    android:textColor="@color/blue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginRight="23dp"
+                    android:checked="false"
+                    android:buttonTint="@color/blue"/>
+
+                <TextView
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="100dp"
+                    android:text="
+    Administra sistemas de informação e disponibilidade dos recursos, identifica vulnerabilidades em servidores, sistemas, aplicações e networking, a fim de garantir maior segurança e integridade dos dados da empresa. Monitora a segurança e implementa processos e políticas de proteção." />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    <!--    xxxxxxxxxxxxxxxxxxxxxxxxx CARD 4 BANCO DE DADOS xxxxxxxxxxxxxxxxxxxxxxx-->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_database"
+            android:layout_width="369dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="5dp"
+            android:layout_below="@+id/card_security"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_categoria_bd_card" />
+
+                <TextView
+                    android:id="@+id/title_card_database"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Banco de Dados"
+                    android:textColor="@color/blue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginRight="23dp"
+                    android:checked="false"
+                    android:buttonTint="@color/blue"/>
+
+                <TextView
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="100dp"
+                    android:text="Criação, instalação, monitoramento, reparos e análise de estruturas de um banco de dados." />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--    xxxxxxxxxxxxxxxxxxxxxxxxx CARD 5 CLOUD xxxxxxxxxxxxxxxxxxxxxxx-->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_cloud"
+            android:layout_width="369dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="5dp"
+            android:layout_below="@+id/card_database"
+            android:layout_marginBottom="20dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_categoria_cloud_card" />
+
+                <TextView
+                    android:id="@+id/title_card_cloud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Cloud computing"
+                    android:textColor="@color/blue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginRight="23dp"
+                    android:checked="false"
+                    android:buttonTint="@color/blue"/>
+
+                <TextView
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="100dp"
+                    android:text="Análise dos indicadores do ambiente computacional, verifica a evolução da infraestrutura e otimização destes recursos. O objetivo é assegurar que as soluções em nuvem funcionem de acordo com à segurança, disponibilidade e desempenho." />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

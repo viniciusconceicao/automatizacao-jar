@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_cliente"
+            android:title="@string/menu_cliente"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_reputation"
+            android:title="@string/menu_reputacao" />
+        <item
+            android:id="@+id/nav_config"
+            android:icon="@drawable/ic_config"
+            android:title="@string/menu_config" />
+        <item
+            android:id="@+id/nav_pagamentos"
+            android:icon="@drawable/ic_pagamento"
+            android:title="@string/menu_pagamento"/>
+
+        <item
+            android:id="@+id/nav_footer_home"
+            android:icon="@drawable/ic_logout"
+            android:title="FOOTER HOME" />
+
+        <item
+            android:id="@+id/nav_footer_painel"
+            android:icon="@drawable/ic_logout"
+            android:title="FOOTER PAINEL" />
+
+        <item
+            android:id="@+id/nav_footer_favorites"
+            android:icon="@drawable/ic_logout"
+            android:title="FOOTER FAVORITOS" />
+        <item
+            android:id="@+id/nav_sair"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/menu_sair" />
+    </group>
+</menu>

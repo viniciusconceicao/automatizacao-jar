@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Search Developers</string>
+    <string name="main_title">A maneira mais rápida e enfiente de contratar serviços tecnológicos.</string>
+    <string name="payment_title">Fill in the holder\'s data.</string>
+    <string name="btn_client">I\'m a customer</string>
+    <string name="btn_professional">I\'m professional</string>
+    <string name="btn_ihave_count">I already have an account</string>
+
+    <string name="register_title">Personal information</string>
+    <string name="hint_name">Full name</string>
+    <string name="hint_date">Birth date</string>
+    <string name="place_holder_date">dd/ww/yyyy</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Cell phone</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_cpf_cnpj">CPF/CNPJ</string>
+    <string name="cb_terms">I accept the terms of use</string>
+    <string name="cb_iam">I\'m:</string>
+    <string name="cb_legal">Legal</string>
+    <string name="cb_physical">Physics</string>
+    <string name="btn_register_next">Next</string>
+
+    <string name="finish_text_success">Your SearchDevelopers account \n has been successfully created!!</string>
+    <string name="finish_text_fail">Error registering your data \n Please try again later.</string>
+    <string name="finish_btn_success">To Enter</string>
+    <string name="finish_btn_fail">Back to start</string>
+
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_cliente">View customers</string>
+    <string name="menu_reputacao">Reputation</string>
+    <string name="menu_config">Settings</string>
+    <string name="menu_pagamento">Payment</string>
+    <string name="menu_sair">Sign out</string>
+    <string name="menu_painel">Painel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="config_title_personal">Personal data</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>
