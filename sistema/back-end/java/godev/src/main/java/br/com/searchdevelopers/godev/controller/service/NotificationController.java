@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 @RequestMapping("/notification")
@@ -24,11 +25,12 @@ public class NotificationController {
   @GetMapping("/order/{id}")
   public ResponseEntity orderNotification(@PathVariable Integer id) {
 
+    List<Notification> notifications = repository.findNotificationByUsersReceiverIdUserOrderByDateCreatedDesc(id);
     if (!repository.existsById(id)){
       return ResponseEntity.status(204).build();
     }
     else {
-      return ResponseEntity.ok(repository.findNotificationByUsersReceiverIdUserOrderByDateCreatedDesc(id));
+      return ResponseEntity.status(200).body(notifications);
     }
 
   }

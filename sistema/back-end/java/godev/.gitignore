@@ -29,7 +29,13 @@ build/
 .vscode/
 
 ### Ignorar os arquivos do target
-/target/*
+#/target/*
 
 ### Não ignorar .jar
-!/target/godev-0.0.1-SNAPSHOT.jar
+#!/target/godev-0.0.1-SNAPSHOT.jar
+/target/classes
+/target/generated-sources
+/target/generated-test-sources
+/target/maven-archiver
+/target/maven-status
+/target/test-classes

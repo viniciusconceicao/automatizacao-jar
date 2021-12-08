@@ -1,29 +1,55 @@
 package br.com.searchdevelopers.godev.domain;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
-//@Entity
+@Entity
 public class CategoryUser {
 
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private Integer idCategory;
-//
-////    DESENVOLVIMENTO, INFRAESTRUTURA, SEGURANCA_INFORMACAO, BANCO_DADOS, CLOUD_COMPUTING
-//
-//    @Column
-//    private Boolean desenvolvimento;
-//    private Boolean infraestrutura;
-//    private Boolean segurancaInformacao;
-//    private Boolean bancoDados;
-//
-//    @
-//    private Boolean cloudComputing;
-//
-//
-//    @ManyToOne
-//    @JoinColumn(name = "users_id")
-//    private Users users;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer idCategory;
 
+    @NotNull
+    @Enumerated(EnumType.STRING)
+    private CategoryUserType type;
 
+    @ManyToOne
+    @JoinColumn(name = "users_id")
+    private Users users;
+
+    public CategoryUser() {
+    }
+
+    public CategoryUser(Integer idCategory,
+                        CategoryUserType type,
+                        Users users) {
+        this.idCategory = idCategory;
+        this.type = type;
+        this.users = users;
+    }
+
+    public Integer getIdCategory() {
+        return idCategory;
+    }
+
+    public void setIdCategory(Integer idCategory) {
+        this.idCategory = idCategory;
+    }
+
+    public CategoryUserType getType() {
+        return type;
+    }
+
+    public void setType(CategoryUserType type) {
+        this.type = type;
+    }
+
+    public Users getUsers() {
+        return users;
+    }
+
+    public void setUsers(Users users) {
+        this.users = users;
+    }
 }
